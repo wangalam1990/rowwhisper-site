@@ -65,9 +65,53 @@ export default function Privacy() {
             We use basic browser cookies to stabilize website access and user session status.
           </p>
 
-          <h2 className="text-xl font-semibold text-slate-900 mb-4">8. Contact</h2>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">8. Legal Basis for Processing Personal Data</h2>
+          <p className="text-slate-700 mb-4">We process your personal data under the following legal bases under GDPR:</p>
+          <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
+            <li><strong>Performance of contract:</strong> To deliver our SaaS subscription services you have purchased.</li>
+            <li><strong>Legitimate business interest:</strong> For platform security, fraud prevention, service optimization and technical maintenance.</li>
+            <li><strong>Consent:</strong> Where you voluntarily agree to optional analytics cookies or marketing communications.</li>
+          </ul>
+          <p className="text-slate-700 mb-8">
+            You have the right to withdraw consent at any time without affecting the lawfulness of prior processing.
+          </p>
+
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">9. Data Retention</h2>
+          <p className="text-slate-700 mb-4">We retain your account data only as long as necessary to provide services:</p>
+          <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
+            <li><strong>Active accounts:</strong> Full data retained during your subscription term.</li>
+            <li><strong>After account cancellation:</strong> We keep your basic transaction records for 6 years to comply with international tax and anti-fraud legal requirements.</li>
+            <li><strong>Upon full account deletion request:</strong> All non-mandatory business records will be permanently erased within 30 calendar days.</li>
+          </ul>
+
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">10. Data Security</h2>
+          <p className="text-slate-700 mb-4">We implement industry-standard technical and organizational security measures to protect your data:</p>
+          <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
+            <li>End-to-end TLS 1.3 HTTPS encryption for all website traffic.</li>
+            <li>Encrypted cloud storage hosted on overseas servers outside Mainland China.</li>
+            <li>Role-based access control for internal staff to limit data access.</li>
+            <li>Regular security scanning and WAF protection against unauthorized access and attacks.</li>
+          </ul>
+
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">11. Cookie Types & Your Choices</h2>
+          <p className="text-slate-700 mb-4">We use two categories of cookies:</p>
+          <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
+            <li><strong>Necessary cookies:</strong> Mandatory for website login, session maintenance and subscription function, cannot be disabled.</li>
+            <li><strong>Analytics cookies:</strong> Optional anonymous usage tracking for product improvement. You may block non-essential cookies via your browser settings at any time.</li>
+          </ul>
+          <p className="text-slate-700 mb-8">
+            We do not use advertising cookies or share tracking data with marketing third parties.
+          </p>
+
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">12. Data Breach Notification</h2>
+          <p className="text-slate-700 mb-8">
+            If a personal data security breach occurs that creates high risk to your privacy, we will notify affected users and relevant regulatory authorities within 72 hours after discovering the incident, together with recommended protective actions.
+          </p>
+
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">13. Contact For Privacy Inquiries</h2>
+          <p className="text-slate-700 mb-4">Email: <a href="mailto:wangalam1990@outlook.com" className="text-emerald-600 hover:underline">wangalam1990@outlook.com</a></p>
           <p className="text-slate-700">
-            If you have any privacy-related questions, please contact us via official email: <a href="mailto:wangalam1990@outlook.com" className="text-emerald-600 hover:underline">wangalam1990@outlook.com</a>.
+            All privacy-related requests, data export or deletion applications shall be submitted via this official email address. We will respond within 7 working days.
           </p>
         </div>
       </div>
