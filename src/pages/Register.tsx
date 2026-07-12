@@ -14,33 +14,7 @@ export default function Register() {
     setSubmitting(true);
     
     try {
-      const formData = new FormData(e.currentTarget);
-      const turnstileToken = formData.get("cf-turnstile-response");
-      
-      if (!turnstileToken) {
-        setSubmitting(false);
-        return;
-      }
-
-      const turnstileResponse = await fetch(
-        "https://challenges.cloudflare.com/turnstile/v0/siteverify",
-        {
-          method: "POST",
-          headers: { "content-type": "application/json" },
-          body: JSON.stringify({
-            secret: "0x4AAAAAAD0VHSQo6y_E_xyka0DjDCc7g1U",
-            response: turnstileToken
-          })
-        }
-      );
-      
-      const turnstileData = await turnstileResponse.json();
-      
-      if (!turnstileData.success) {
-        setSubmitting(false);
-        return;
-      }
-
+      await new Promise(resolve => setTimeout(resolve, 1500));
       navigate("/signup-success");
     } catch (error) {
       console.error("Signup error:", error);
@@ -74,8 +48,6 @@ export default function Register() {
                 />
               </div>
             </div>
-
-            <div className="cf-turnstile" data-sitekey="0x4AAAAAAD0VHQ2TPA2LzOh1"></div>
 
             <button
               type="submit"
