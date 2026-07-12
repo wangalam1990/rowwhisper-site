@@ -1,4 +1,4 @@
-import { MessageSquare, Mail, Phone, MapPin } from "lucide-react";
+import { MessageSquare, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import RequiredLabels from "./RequiredLabels";
 
@@ -17,13 +17,9 @@ export default function Footer() {
               Private office chat for overseas teams. Secure, encrypted communication without social distractions.
             </p>
             <div className="flex gap-4">
-              <a href="mailto:contact@rowwhisper.com" className="flex items-center gap-2 text-slate-400 hover:text-emerald-400 transition-colors">
+              <a href="mailto:wangalam1990@outlook.com" className="flex items-center gap-2 text-slate-400 hover:text-emerald-400 transition-colors">
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">contact@rowwhisper.com</span>
-              </a>
-              <a href="tel:+85212345678" className="flex items-center gap-2 text-slate-400 hover:text-emerald-400 transition-colors">
-                <Phone className="w-4 h-4" />
-                <span className="text-sm">+852 1234 5678</span>
+                <span className="text-sm">wangalam1990@outlook.com</span>
               </a>
               <div className="flex items-center gap-2 text-slate-400">
                 <MapPin className="w-4 h-4" />
