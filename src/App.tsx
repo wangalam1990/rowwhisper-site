@@ -7,12 +7,13 @@ import Refund from "@/pages/Refund";
 import Contact from "@/pages/Contact";
 import Login from "@/pages/Login";
 import Register from "@/pages/Register";
+import SignupSuccess from "@/pages/SignupSuccess";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 function AppContent() {
   const location = useLocation();
-  const authRoutes = ["/login", "/register"];
+  const authRoutes = ["/login", "/register", "/signup-success"];
   const isAuthRoute = authRoutes.includes(location.pathname);
 
   return (
@@ -27,6 +28,7 @@ function AppContent() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/signup-success" element={<SignupSuccess />} />
       </Routes>
       {!isAuthRoute && <Footer />}
     </>
