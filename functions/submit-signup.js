@@ -2,8 +2,30 @@ export async function onRequestPost(context) {
   const { request, env } = context;
   const formData = await request.formData();
   const userEmail = formData.get("user_email");
+  const turnstileToken = formData.get("cf-turnstile-response");
 
-  if (!userEmail) {
+  if (!userEmail || !turnstileToken) {
+    return Response.redirect("/register", 302);
+  }
+
+  const ip = request.headers.get("CF-Connecting-IP");
+
+  const turnstileResponse = await fetch(
+    "https://challenges.cloudflare.com/turnstile/v0/siteverify",
+    {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        secret: "0x4AAAAAAD0VHSQo6y_E_xyka0DjDCc7g1U",
+        response: turnstileToken,
+        remoteip: ip
+      })
+    }
+  );
+
+  const turnstileData = await turnstileResponse.json();
+
+  if (!turnstileData.success) {
     return Response.redirect("/register", 302);
   }
 
