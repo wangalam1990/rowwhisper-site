@@ -22,10 +22,12 @@ export default function Register() {
 
           <form
             method="POST"
-            action="/submit-signup"
-            onSubmit={handleSubmit}
             className="space-y-6"
+            data-name="Signup Form"
+            onSubmit={handleSubmit}
           >
+            <input type="hidden" name="form-name" value="Signup Form" />
+            
             <div>
               <label className="block text-sm font-medium text-slate-700 mb-2">
                 Email Address

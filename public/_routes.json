@@ -1,7 +1,7 @@
 {
   "version": 1,
   "include": ["/*"],
-  "exclude": ["/api/*", "/submit-signup"],
+  "exclude": ["/api/*"],
   "error_pages": {
     "404": "/index.html"
   }
