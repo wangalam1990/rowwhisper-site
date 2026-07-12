@@ -1,7 +1,16 @@
-import { Mail, ArrowRight } from "lucide-react";
+import { useState } from "react";
+import { Mail, ArrowRight, Loader2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Register() {
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    if (!submitting) {
+      setSubmitting(true);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center py-16">
       <div className="max-w-md w-full px-4">
@@ -14,6 +23,7 @@ export default function Register() {
           <form
             method="POST"
             action="/submit-signup"
+            onSubmit={handleSubmit}
             className="space-y-6"
           >
             <div>
@@ -26,7 +36,8 @@ export default function Register() {
                   type="email"
                   name="user_email"
                   required
-                  className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
+                  disabled={submitting}
+                  className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="your@email.com"
                 />
               </div>
@@ -36,10 +47,20 @@ export default function Register() {
 
             <button
               type="submit"
-              className="w-full flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold transition-all"
+              disabled={submitting}
+              className="w-full flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-400 text-white px-6 py-3 rounded-lg font-semibold transition-all disabled:cursor-not-allowed"
             >
-              Create Account
-              <ArrowRight className="w-5 h-5" />
+              {submitting ? (
+                <>
+                  <Loader2 className="w-5 h-5 animate-spin" />
+                  Creating Account...
+                </>
+              ) : (
+                <>
+                  Create Account
+                  <ArrowRight className="w-5 h-5" />
+                </>
+              )}
             </button>
           </form>
 
