@@ -1,0 +1,6 @@
+name = "rowwhisper-site"
+type = "pages"
+
+[build]
+command = "npm run build"
+directory = "dist"
