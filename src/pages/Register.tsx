@@ -1,13 +1,65 @@
 import { useState } from "react";
 import { Mail, ArrowRight, Loader2 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Register() {
   const [submitting, setSubmitting] = useState(false);
+  const [email, setEmail] = useState("");
+  const navigate = useNavigate();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    if (!submitting) {
-      setSubmitting(true);
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    if (submitting || !email) return;
+    
+    setSubmitting(true);
+    
+    try {
+      const formData = new FormData(e.currentTarget);
+      const turnstileToken = formData.get("cf-turnstile-response");
+      
+      if (!turnstileToken) {
+        setSubmitting(false);
+        return;
+      }
+
+      const ip = await fetch("https://api.ipify.org?format=json").then(r => r.json()).then(d => d.ip);
+
+      const turnstileResponse = await fetch(
+        "https://challenges.cloudflare.com/turnstile/v0/siteverify",
+        {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({
+            secret: "0x4AAAAAAD0VHSQo6y_E_xyka0DjDCc7g1U",
+            response: turnstileToken,
+            remoteip: ip
+          })
+        }
+      );
+      
+      const turnstileData = await turnstileResponse.json();
+      
+      if (!turnstileData.success) {
+        setSubmitting(false);
+        return;
+      }
+
+      await fetch("https://api.mailchannels.net/tx/v1/send", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          personalizations: [{ to: [{ email: "wangalam1990@outlook.com" }] }],
+          from: { email: "no-reply@rowwhisper.com", name: "RowWhisper Sign Up" },
+          subject: "New User Registration Request",
+          content: [{ type: "text/plain", value: `New signup email: ${email}` }]
+        })
+      });
+
+      navigate("/signup-success");
+    } catch (error) {
+      console.error("Signup error:", error);
+      setSubmitting(false);
     }
   };
 
@@ -20,14 +72,7 @@ export default function Register() {
             <p className="text-slate-600">Join RowWhisper for private team communication</p>
           </div>
 
-          <form
-            method="POST"
-            className="space-y-6"
-            data-name="Signup Form"
-            onSubmit={handleSubmit}
-          >
-            <input type="hidden" name="form-name" value="Signup Form" />
-            
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label className="block text-sm font-medium text-slate-700 mb-2">
                 Email Address
@@ -36,7 +81,8 @@ export default function Register() {
                 <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
                 <input
                   type="email"
-                  name="user_email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   required
                   disabled={submitting}
                   className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all disabled:opacity-50 disabled:cursor-not-allowed"
