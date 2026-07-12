@@ -4,95 +4,71 @@ export default function Privacy() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
           <h1 className="text-3xl font-bold text-slate-900 mb-6">Privacy Policy</h1>
-          <p className="text-slate-600 mb-8">
-            Last updated: July 12, 2026
+          <p className="text-slate-500 mb-8">Last Updated: July 2026</p>
+          
+          <p className="text-slate-700 mb-6">
+            RowWhisper ("we", "us", or "our") operates the website <code className="bg-slate-100 px-2 py-1 rounded">https://rowwhisper.com</code> (the "Service").
+          </p>
+          
+          <p className="text-slate-700 mb-8">
+            This Privacy Policy explains how we collect, use, store, and protect user information when you use our platform, including our AI development tools and private spreadsheet chat features.
           </p>
 
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold text-slate-900 mb-4">1. Introduction</h2>
-            <p className="text-slate-600 mb-4">
-              RowWhisper ("we", "us", "our") is committed to protecting the privacy and security of your personal information. 
-              This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our 
-              private office chat service ("Service").
-            </p>
-          </section>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">1. Information We Collect</h2>
+          <p className="text-slate-700 mb-4">We may collect the following information:</p>
+          <ul className="list-disc list-inside text-slate-700 mb-6 space-y-2">
+            <li>Account registration information such as your email address</li>
+            <li>Service usage logs and interaction records</li>
+            <li>Device and browser basic access information</li>
+          </ul>
+          <p className="text-slate-700 mb-8">
+            We do NOT collect real-name identity information, payment information, or sensitive personal data. All payment processes are handled independently by Stripe.
+          </p>
 
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold text-slate-900 mb-4">2. Information We Collect</h2>
-            <h3 className="text-lg font-medium text-slate-800 mb-2">2.1 Personal Information</h3>
-            <ul className="text-slate-600 list-disc list-inside mb-4 space-y-1">
-              <li>Email address for account registration and communication</li>
-              <li>First and last name for profile identification</li>
-              <li>Billing information for subscription payments (processed by Stripe)</li>
-            </ul>
-            <h3 className="text-lg font-medium text-slate-800 mb-2">2.2 Usage Information</h3>
-            <ul className="text-slate-600 list-disc list-inside mb-4 space-y-1">
-              <li>Chat room activity and message history</li>
-              <li>Device information and IP addresses for security purposes</li>
-              <li>Usage patterns and feature interactions</li>
-            </ul>
-          </section>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">2. How We Use Information</h2>
+          <p className="text-slate-700 mb-4">We use collected data to:</p>
+          <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
+            <li>Provide, maintain, and improve our SaaS services</li>
+            <li>Optimize AI tool functions and user experience</li>
+            <li>Ensure platform security and prevent abuse</li>
+            <li>Respond to user service requests</li>
+          </ul>
 
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold text-slate-900 mb-4">3. How We Use Your Information</h2>
-            <ul className="text-slate-600 list-disc list-inside mb-4 space-y-1">
-              <li>Provide and maintain the Service</li>
-              <li>Process subscription payments</li>
-              <li>Communicate with you about your account and Service updates</li>
-              <li>Ensure the security and integrity of the Service</li>
-              <li>Improve and optimize the Service</li>
-            </ul>
-          </section>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">3. Data Storage & Overseas Compliance</h2>
+          <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
+            <li>All user data is stored on overseas cloud servers.</li>
+            <li>We do not store any user data within mainland China.</li>
+            <li>The platform fully complies with GDPR and international data privacy standards.</li>
+          </ul>
 
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold text-slate-900 mb-4">4. Data Security</h2>
-            <p className="text-slate-600 mb-4">
-              We implement industry-standard security measures to protect your information:
-            </p>
-            <ul className="text-slate-600 list-disc list-inside mb-4 space-y-1">
-              <li>End-to-end encryption for all chat messages</li>
-              <li>Secure HTTPS connections for all data transmission</li>
-              <li>Password hashing using bcrypt</li>
-              <li>Regular security audits and updates</li>
-            </ul>
-          </section>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">4. Data Sharing</h2>
+          <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
+            <li>We will never sell, rent, or trade your personal data to third parties.</li>
+            <li>We only share necessary data with authorized service providers (such as Stripe for payment processing) to complete basic service functions.</li>
+          </ul>
 
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold text-slate-900 mb-4">5. Third-Party Services</h2>
-            <p className="text-slate-600 mb-4">
-              We use the following third-party services:
-            </p>
-            <ul className="text-slate-600 list-disc list-inside mb-4 space-y-1">
-              <li><strong>Stripe:</strong> Payment processing. Your billing information is handled directly by Stripe.</li>
-              <li><strong>Google Cloud:</strong> Infrastructure hosting. Your data is stored in secure data centers.</li>
-            </ul>
-          </section>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">5. User Rights</h2>
+          <p className="text-slate-700 mb-4">You have the right to:</p>
+          <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
+            <li>Access your account data</li>
+            <li>Request data deletion</li>
+            <li>Cancel your service subscription at any time</li>
+          </ul>
 
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold text-slate-900 mb-4">6. Your Rights</h2>
-            <ul className="text-slate-600 list-disc list-inside mb-4 space-y-1">
-              <li>Access and review your personal information</li>
-              <li>Update or correct your information</li>
-              <li>Request deletion of your account and data</li>
-              <li>Export your chat data</li>
-            </ul>
-          </section>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">6. Website Access Control</h2>
+          <p className="text-slate-700 mb-8">
+            Our website restricts access from Mainland China IP addresses for global compliance and security reasons. This is a technical security measure and does not affect service availability for global overseas users.
+          </p>
 
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold text-slate-900 mb-4">7. Changes to This Policy</h2>
-            <p className="text-slate-600 mb-4">
-              We may update this Privacy Policy from time to time. We will notify you of any changes by posting the 
-              new Privacy Policy on this page and updating the "Last updated" date.
-            </p>
-          </section>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">7. Cookies</h2>
+          <p className="text-slate-700 mb-8">
+            We use basic browser cookies to stabilize website access and user session status.
+          </p>
 
-          <section>
-            <h2 className="text-xl font-semibold text-slate-900 mb-4">8. Contact Us</h2>
-            <p className="text-slate-600">
-              If you have any questions or concerns about this Privacy Policy, please contact us at:
-            </p>
-            <p className="text-slate-800 mt-2">contact@rowwhisper.com</p>
-          </section>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">8. Contact</h2>
+          <p className="text-slate-700">
+            If you have any privacy-related questions, please contact us via official email: <a href="mailto:wangalam1990@outlook.com" className="text-emerald-600 hover:underline">wangalam1990@outlook.com</a>.
+          </p>
         </div>
       </div>
     </div>

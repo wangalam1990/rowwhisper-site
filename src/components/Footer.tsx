@@ -28,6 +28,26 @@ export default function Footer() {
             </div>
           </div>
           <div>
+            <h3 className="font-semibold mb-4">Legal</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/privacy" className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/terms" className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link to="/refund" className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">
+                  Refund & Cancellation
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
             <h3 className="font-semibold mb-4">Product</h3>
             <ul className="space-y-2">
               <li>
@@ -36,29 +56,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/privacy" className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
                 <Link to="/contact" className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">
                   Contact Us
                 </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-4">Resources</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">
-                  API Reference
-                </a>
               </li>
               <li>
                 <a href="#" className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">
