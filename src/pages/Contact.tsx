@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, MapPin, Send, CheckCircle } from "lucide-react";
+import { Mail, MapPin, Send, CheckCircle, Clock, MessageSquare } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -29,7 +29,7 @@ export default function Contact() {
             Contact Us
           </h1>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            Have questions? We'd love to hear from you. Fill out the form below and we'll get back to you.
+            Have questions? We'd love to hear from you. Fill out the form below and we'll get back to you within 24 hours.
           </p>
         </div>
 
@@ -136,17 +136,54 @@ export default function Contact() {
                     <p className="text-slate-600">Hong Kong</p>
                   </div>
                 </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MessageSquare className="w-5 h-5 text-emerald-600" />
+                  </div>
+                  <div>
+                    <p className="font-medium text-slate-900">Support</p>
+                    <p className="text-slate-600">Contact form available 24/7</p>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-6 text-white">
-              <h3 className="text-lg font-semibold mb-2">Business Hours</h3>
-              <p className="text-slate-300 text-sm">
+              <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                <Clock className="w-5 h-5" />
+                Business Hours
+              </h3>
+              <p className="text-slate-300 text-sm mb-2">
                 Monday - Friday: 9:00 AM - 6:00 PM HKT
               </p>
-              <p className="text-slate-400 text-sm mt-1">
+              <p className="text-slate-400 text-sm mb-2">
+                Saturday - Sunday: 10:00 AM - 4:00 PM HKT
+              </p>
+              <p className="text-slate-400 text-sm">
                 We respond to all inquiries within 24 hours.
               </p>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg p-6">
+              <h3 className="text-lg font-semibold text-slate-900 mb-3">Contact Categories</h3>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-2 text-sm text-slate-600">
+                  <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                  General Questions
+                </li>
+                <li className="flex items-center gap-2 text-sm text-slate-600">
+                  <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                  Billing & Payments
+                </li>
+                <li className="flex items-center gap-2 text-sm text-slate-600">
+                  <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                  Technical Support
+                </li>
+                <li className="flex items-center gap-2 text-sm text-slate-600">
+                  <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                  Privacy Concerns
+                </li>
+              </ul>
             </div>
           </div>
         </div>
