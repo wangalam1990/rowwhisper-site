@@ -43,11 +43,8 @@ export default function Home() {
             <p className="text-slate-400 mb-8 max-w-2xl mx-auto">
               RowWhisper is a private messaging tool designed for overseas office users. It uses a simple document-style interface as camouflage, so you can chat privately without attracting attention in a work environment.
             </p>
-            <p className="text-emerald-400 mb-4 font-medium">
+            <p className="text-emerald-400 mb-8 font-medium">
               We provide only hidden chat services.
-            </p>
-            <p className="text-slate-400 mb-8">
-              We do NOT offer AI tools, document editing, coding features, or content generation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -67,7 +64,7 @@ export default function Home() {
             
             <div className="mt-8 bg-amber-50/10 border border-amber-500/20 rounded-xl p-4 max-w-xl mx-auto">
               <p className="text-sm text-amber-300">
-                Full chat functionality is being deployed. Paid users will get full access within 15 business days after payment.
+                Full private chat features are currently in staged rollout. All paid subscription privileges will be fully activated within 15 business days after successful payment. Users may apply for a full refund via official support email if complete advertised functions cannot be launched on schedule.
               </p>
             </div>
           </div>

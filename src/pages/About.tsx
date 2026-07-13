@@ -11,15 +11,8 @@ export default function About() {
             RowWhisper is a private communication platform for overseas office users and remote teams. We do not provide services to users in Mainland China.
           </p>
           
-          <p className="text-slate-700 leading-relaxed mb-6">
-            Our only service is private, discreet chat hidden behind a neutral document-like interface.
-          </p>
-          
-          <p className="text-slate-700 leading-relaxed mb-6">
-            We do NOT provide AI, office tools, document processing, coding, or development features.
-          </p>
-          
           <p className="text-slate-700 leading-relaxed mb-8">
+            Our only service is private, discreet chat hidden behind a neutral document-like interface.
             All data is stored on overseas servers. Access from Mainland China is restricted for compliance reasons.
           </p>
 

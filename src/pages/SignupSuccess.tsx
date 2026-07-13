@@ -19,7 +19,7 @@ export default function SignupSuccess() {
           </p>
 
           <p className="text-slate-600 mb-8 leading-relaxed">
-            All free-tier AI development features will be available once your email is activated. You will receive a confirmation email at the address you provided.
+            Full private chat features will be available within 15 business days after account activation.
           </p>
 
           <div className="bg-slate-50 rounded-xl p-4 mb-8">

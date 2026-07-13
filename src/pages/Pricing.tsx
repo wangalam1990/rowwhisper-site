@@ -164,7 +164,7 @@ export default function Pricing() {
         <div className="text-center mt-12">
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-6 max-w-2xl mx-auto">
             <p className="text-sm text-amber-800">
-              Full private chat functions are currently in staged rollout. All paid subscription features will be fully activated within 15 business days after successful payment.
+              Full private chat features are currently in staged rollout. All paid subscription privileges will be fully activated within 15 business days after successful payment. Users may apply for a full refund via official support email if complete advertised functions cannot be launched on schedule.
             </p>
           </div>
           
