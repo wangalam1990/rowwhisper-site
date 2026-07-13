@@ -53,6 +53,12 @@ export default function Home() {
                 Contact Sales
               </Link>
             </div>
+            
+            <div className="mt-8 bg-amber-50/10 border border-amber-500/20 rounded-xl p-4 max-w-xl mx-auto">
+              <p className="text-sm text-amber-300">
+                Private encrypted office chat module is under final deployment, all purchased subscription features will be fully activated within 15 business days. AI coding IDE functions are fully available for immediate use after account activation.
+              </p>
+            </div>
           </div>
         </div>
       </section>

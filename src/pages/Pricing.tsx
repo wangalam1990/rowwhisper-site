@@ -17,6 +17,8 @@ export default function Pricing() {
       "Real-time messaging",
       "24/7 customer support",
       "Secure file sharing",
+      "Full AI coding IDE",
+      "AI code completion",
     ],
     buttonText: "Start Monthly",
     popular: false,
@@ -34,6 +36,7 @@ export default function Pricing() {
       "Custom room branding",
       "Advanced analytics",
       "API access",
+      "AI-powered insights",
     ],
     buttonText: "Start Yearly",
     popular: true,
@@ -82,11 +85,14 @@ export default function Pricing() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div className={`bg-white rounded-2xl p-8 shadow-lg ${monthlyPlan.popular ? "ring-2 ring-emerald-500" : ""}`}>
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-2 mb-2">
               <Zap className="w-6 h-6 text-slate-600" />
               <h3 className="text-xl font-bold text-slate-900">{monthlyPlan.name}</h3>
             </div>
-            <p className="text-slate-500 mb-6">{monthlyPlan.description}</p>
+            <p className="text-slate-500 mb-2">{monthlyPlan.description}</p>
+            <p className="text-sm text-emerald-600 font-medium mb-6">
+              All plans include private office chat + full AI coding IDE features
+            </p>
             <div className="mb-6">
               <span className="text-4xl font-bold text-slate-900">${currentMonthlyPrice}</span>
               <span className="text-slate-500 ml-2">/month</span>
@@ -118,11 +124,14 @@ export default function Pricing() {
                 Most Popular
               </div>
             )}
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-2 mb-2">
               <Sparkles className="w-6 h-6 text-emerald-500" />
               <h3 className="text-xl font-bold text-slate-900">{yearlyPlan.name}</h3>
             </div>
-            <p className="text-slate-500 mb-6">{yearlyPlan.description}</p>
+            <p className="text-slate-500 mb-2">{yearlyPlan.description}</p>
+            <p className="text-sm text-emerald-600 font-medium mb-6">
+              All plans include private office chat + full AI coding IDE features
+            </p>
             <div className="mb-6">
               <span className="text-4xl font-bold text-slate-900">${currentYearlyPrice}</span>
               <span className="text-slate-500 ml-2">/month</span>
@@ -154,9 +163,20 @@ export default function Pricing() {
         </div>
 
         <div className="text-center mt-12">
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-6 max-w-2xl mx-auto">
+            <p className="text-sm text-amber-800">
+              Private encrypted office chat module is under final deployment, all purchased subscription features will be fully activated within 15 business days. AI coding IDE functions are fully available for immediate use after account activation.
+            </p>
+          </div>
+          
           <p className="text-slate-500 mb-4">
-            All plans include secure Stripe payment processing
+            All monthly & annual subscriptions follow our Refund & Cancellation Policy. Annual plans are non-refundable for partial annual periods after activation.
           </p>
+          
+          <p className="text-slate-500 text-sm mb-4">
+            By subscribing, you agree to our <Link to="/terms" className="text-emerald-600 hover:underline">Terms of Service</Link>, <Link to="/privacy" className="text-emerald-600 hover:underline">Privacy Policy</Link> and <Link to="/refund" className="text-emerald-600 hover:underline">Refund & Cancellation Policy</Link>.
+          </p>
+          
           <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow">
             <span className="text-slate-700 font-medium">Secure Payments by</span>
             <span className="text-lg font-bold text-blue-600">Stripe</span>

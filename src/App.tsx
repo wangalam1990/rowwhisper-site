@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Home from "@/pages/Home";
+import About from "@/pages/About";
 import Pricing from "@/pages/Pricing";
 import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
@@ -21,6 +22,7 @@ function AppContent() {
       {!isAuthRoute && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />

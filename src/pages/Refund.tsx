@@ -32,6 +32,7 @@ export default function Refund() {
             <li>Double accidental payment within the same billing cycle</li>
             <li>Technical error causing incorrect charge amount</li>
             <li>Service features not working as described within 7 days of subscription</li>
+            <li>If full advertised product features are not delivered within 15 business days of subscription purchase, users may submit a full refund request via support email</li>
           </ul>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">4. Refund Request Process</h2>
