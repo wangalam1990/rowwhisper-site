@@ -4,7 +4,7 @@ export default function Terms() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
           <h1 className="text-3xl font-bold text-slate-900 mb-6">Terms of Service</h1>
-          <p className="text-slate-500 mb-8">Last Updated: July 2026</p>
+          <p className="text-slate-500 mb-8">Last Updated: June 2025</p>
           
           <p className="text-slate-700 mb-8">
             These Terms of Service ("Terms") govern your access and use of the RowWhisper platform and website service at <code className="bg-slate-100 px-2 py-1 rounded">https://rowwhisper.com</code>.

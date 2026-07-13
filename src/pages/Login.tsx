@@ -78,7 +78,7 @@ export default function Login() {
                 />
                 <span className="text-sm text-slate-600">Remember me</span>
               </label>
-              <Link to="#" className="text-sm text-emerald-600 hover:text-emerald-700">
+              <Link to="/contact" className="text-sm text-emerald-600 hover:text-emerald-700">
                 Forgot password?
               </Link>
             </div>

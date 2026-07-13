@@ -4,7 +4,7 @@ export default function Refund() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
           <h1 className="text-3xl font-bold text-slate-900 mb-6">Refund and Cancellation Policy</h1>
-          <p className="text-slate-500 mb-8">Last Updated: July 2026</p>
+          <p className="text-slate-500 mb-8">Last Updated: June 2025</p>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">1. Subscription Cancellation</h2>
           <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
@@ -64,7 +64,7 @@ export default function Refund() {
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">8. Service Scope</h2>
           <p className="text-slate-700 mb-8">
-            This policy applies to all paid plans including Starter and Team Pro subscriptions.
+            This policy applies to all paid plans including Monthly and Yearly subscriptions.
           </p>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">9. Changes to This Policy</h2>

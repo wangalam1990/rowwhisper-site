@@ -43,7 +43,12 @@ export default function Contact() {
                   <p className="text-slate-600">We'll get back to you within 24 hours.</p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} data-name="Contact Form" className="space-y-6">
+                  <input
+                    type="hidden"
+                    name="form-name"
+                    value="Contact Form"
+                  />
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium text-slate-700 mb-2">

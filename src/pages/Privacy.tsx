@@ -4,14 +4,14 @@ export default function Privacy() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
           <h1 className="text-3xl font-bold text-slate-900 mb-6">Privacy Policy</h1>
-          <p className="text-slate-500 mb-8">Last Updated: July 2026</p>
+          <p className="text-slate-500 mb-8">Last Updated: June 2025</p>
           
           <p className="text-slate-700 mb-6">
             RowWhisper ("we", "us", or "our") operates the website <code className="bg-slate-100 px-2 py-1 rounded">https://rowwhisper.com</code> (the "Service").
           </p>
           
           <p className="text-slate-700 mb-8">
-            This Privacy Policy explains how we collect, use, store, and protect user information when you use our platform, including our AI development tools and private spreadsheet chat features.
+            This Privacy Policy explains how we collect, use, store, and protect user information when you use our private office chat platform.
           </p>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">1. Information We Collect</h2>
@@ -67,7 +67,7 @@ export default function Privacy() {
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">8. Legal Basis for Processing Personal Data</h2>
           <p className="text-slate-700 mb-4">We process your personal data under the following legal bases under GDPR:</p>
-          <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
+          <ul className="list-disc list-inside text-slate-700 mb-4 space-y-2">
             <li><strong>Performance of contract:</strong> To deliver our SaaS subscription services you have purchased.</li>
             <li><strong>Legitimate business interest:</strong> For platform security, fraud prevention, service optimization and technical maintenance.</li>
             <li><strong>Consent:</strong> Where you voluntarily agree to optional analytics cookies or marketing communications.</li>
@@ -76,22 +76,12 @@ export default function Privacy() {
             You have the right to withdraw consent at any time without affecting the lawfulness of prior processing.
           </p>
 
-          <h2 className="text-xl font-semibold text-slate-900 mb-4">9. Legal Basis for Data Processing</h2>
-          <p className="text-slate-700 mb-8">
-            We process your personal data based on legitimate GDPR legal bases, including contract performance, legitimate business interests for platform security and service optimization, and user voluntary consent where applicable. You may withdraw your consent at any time.
-          </p>
-
-          <h2 className="text-xl font-semibold text-slate-900 mb-4">10. Data Retention Policy</h2>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">9. Data Retention Policy</h2>
           <p className="text-slate-700 mb-8">
             We retain user data only for service and legal compliance purposes. Active account data is kept during your service period. After account cancellation, basic billing and security records are retained for 6 years for tax and anti-fraud compliance. All non-essential personal data will be permanently deleted within 30 days upon your deletion request.
           </p>
 
-          <h2 className="text-xl font-semibold text-slate-900 mb-4">11. Data Security Protection</h2>
-          <p className="text-slate-700 mb-8">
-            We adopt industry-standard security measures including full TLS 1.3 HTTPS encryption, overseas encrypted cloud storage, access permission control and Cloudflare WAF protection to protect your personal data from unauthorized access, leakage or abuse.
-          </p>
-
-          <h2 className="text-xl font-semibold text-slate-900 mb-4">12. Data Security</h2>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">10. Data Security Protection</h2>
           <p className="text-slate-700 mb-4">We implement industry-standard technical and organizational security measures to protect your data:</p>
           <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
             <li>End-to-end TLS 1.3 HTTPS encryption for all website traffic.</li>
@@ -100,9 +90,9 @@ export default function Privacy() {
             <li>Regular security scanning and WAF protection against unauthorized access and attacks.</li>
           </ul>
 
-          <h2 className="text-xl font-semibold text-slate-900 mb-4">13. Cookie Types & Your Choices</h2>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">11. Cookie Types & Your Choices</h2>
           <p className="text-slate-700 mb-4">We use two categories of cookies:</p>
-          <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
+          <ul className="list-disc list-inside text-slate-700 mb-4 space-y-2">
             <li><strong>Necessary cookies:</strong> Mandatory for website login, session maintenance and subscription function, cannot be disabled.</li>
             <li><strong>Analytics cookies:</strong> Optional anonymous usage tracking for product improvement. You may block non-essential cookies via your browser settings at any time.</li>
           </ul>
@@ -110,17 +100,12 @@ export default function Privacy() {
             We do not use advertising cookies or share tracking data with marketing third parties.
           </p>
 
-          <h2 className="text-xl font-semibold text-slate-900 mb-4">14. Data Breach Notification</h2>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">12. Data Breach Notification</h2>
           <p className="text-slate-700 mb-8">
             If a personal data security breach occurs that creates high risk to your privacy, we will notify affected users and relevant regulatory authorities within 72 hours after discovering the incident, together with recommended protective actions.
           </p>
 
-          <h2 className="text-xl font-semibold text-slate-900 mb-4">15. Data Breach Notification</h2>
-          <p className="text-slate-700 mb-8">
-            In the event of a personal data breach that risks user privacy, we will notify affected users and relevant regulatory authorities within 72 hours in accordance with global privacy compliance requirements.
-          </p>
-
-          <h2 className="text-xl font-semibold text-slate-900 mb-4">16. Contact For Privacy Inquiries</h2>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">13. Contact For Privacy Inquiries</h2>
           <p className="text-slate-700 mb-4">Email: <a href="mailto:wangalam1990@outlook.com" className="text-emerald-600 hover:underline">wangalam1990@outlook.com</a></p>
           <p className="text-slate-700">
             All privacy-related requests, data export or deletion applications shall be submitted via this official email address. We will respond within 7 working days.

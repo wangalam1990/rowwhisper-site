@@ -31,7 +31,13 @@ export default function Register() {
             <p className="text-slate-600">Join RowWhisper for private team communication</p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} data-name="Register Form" className="space-y-6">
+            <input
+              type="hidden"
+              name="form-name"
+              value="Register Form"
+            />
+            
             <div>
               <label className="block text-sm font-medium text-slate-700 mb-2">
                 Email Address
@@ -47,6 +53,10 @@ export default function Register() {
                   placeholder="your@email.com"
                 />
               </div>
+            </div>
+
+            <div>
+              <div className="cf-turnstile" data-sitekey={import.meta.env.VITE_TURNSTILE_SITE_KEY} data-callback="() => {}"></div>
             </div>
 
             <button

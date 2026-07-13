@@ -61,15 +61,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#" className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">
+                <Link to="/contact" className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">
                   Help Center
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-500 text-sm">
           <p>&copy; 2026 RowWhisper. All rights reserved.</p>
+          <p className="mt-2">RowWhisper Technology Limited, Hong Kong</p>
         </div>
       </div>
     </footer>

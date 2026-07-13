@@ -6,18 +6,18 @@ export default function Home() {
   const features = [
     {
       icon: Shield,
-      title: "End-to-End Encryption",
-      description: "All messages are encrypted from sender to receiver, ensuring complete privacy.",
+      title: "Enterprise-Grade Encryption",
+      description: "Military-grade end-to-end encryption protects all communications. Your data stays private and secure.",
     },
     {
       icon: Users,
-      title: "Private Team Rooms",
-      description: "Create dedicated chat rooms for your team. Only invited members can join.",
+      title: "Private Team Workspaces",
+      description: "Create secure, dedicated chat rooms for your team. Invite-only access ensures confidentiality.",
     },
     {
       icon: Lock,
-      title: "No Social Distractions",
-      description: "No stranger matching, no public feeds. Focus solely on work communication.",
+      title: "Distraction-Free Environment",
+      description: "No social features, no algorithms, no noise. Pure productivity-focused communication.",
     },
   ];
 
@@ -35,8 +35,8 @@ export default function Home() {
               <span className="text-emerald-400">For Overseas Teams</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-              Secure, encrypted communication without social distractions. 
-              Create private rooms for your team and focus on productive collaboration.
+              Enterprise-grade encrypted communication platform designed exclusively for overseas teams. 
+              No social features, no distractions - just secure, focused collaboration.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -92,7 +92,7 @@ export default function Home() {
             Ready to Focus on Work?
           </h2>
           <p className="text-slate-300 mb-8">
-            Join thousands of teams who trust RowWhisper for their private office communication
+            Join global teams who trust RowWhisper for secure, private business communication
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
