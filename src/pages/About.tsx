@@ -1,16 +1,16 @@
-import { Shield, Code, Globe, Lock, Mail } from "lucide-react";
+import { Shield, FileText, Globe, Lock, Mail } from "lucide-react";
 
 export default function About() {
   const features = [
     {
-      icon: Lock,
-      title: "Private Office Chat",
-      description: "Encrypted private communication platform for overseas teams with table-based disguise features.",
+      icon: FileText,
+      title: "Document Camouflage",
+      description: "The entire platform interface simulates standard office documents and spreadsheets, fully hiding private chat behavior in workplace scenarios.",
     },
     {
-      icon: Code,
-      title: "AI Coding IDE",
-      description: "Full-stack AI-assisted programming environment with intelligent code completion and analysis.",
+      icon: Lock,
+      title: "Encrypted Private Chat",
+      description: "End-to-end encrypted private conversation system supporting one-on-one chat and small team group chat. All chat content is hidden by default.",
     },
   ];
 
@@ -27,7 +27,7 @@ export default function About() {
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About RowWhisper</h1>
             <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">
-              A dual-function SaaS platform built for overseas independent developers and small teams seeking privacy and productivity.
+              Discreet private chat platform with document camouflage for global office users.
             </p>
           </div>
         </div>
@@ -36,12 +36,12 @@ export default function About() {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
-            <h2 className="text-2xl font-bold text-slate-900 mb-6">Product Origin</h2>
+            <h2 className="text-2xl font-bold text-slate-900 mb-6">Our Platform</h2>
             <p className="text-slate-700 leading-relaxed mb-6">
-              RowWhisper is built upon the TRAE AI open-source IDE prototype. Recognizing the unique needs of overseas independent developers and small teams, we developed a dual-function SaaS platform that combines privacy-focused communication with AI-powered development tools.
+              RowWhisper is an independently developed SaaS private communication platform, serving only overseas office users and remote teams. No services are provided to users located in Mainland China.
             </p>
             <p className="text-slate-700 leading-relaxed">
-              Our mission is to provide a secure, distraction-free environment where teams can communicate privately and develop software efficiently, all within a single integrated platform.
+              Our platform provides one single core function: discreet private chat hidden under document-style interface camouflage, designed for private workplace communication. We do not provide AI tools, document editing, office assistance, content generation, software development or coding-related services.
             </p>
           </div>
         </div>
@@ -50,9 +50,9 @@ export default function About() {
       <section className="py-20 bg-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Core Business Functions</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Core Functions</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Two integrated modules designed for modern overseas teams
+              Two integrated features designed for private office communication
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -79,14 +79,12 @@ export default function About() {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
-            <h2 className="text-2xl font-bold text-slate-900 mb-6">Operations & Compliance</h2>
+            <h2 className="text-2xl font-bold text-slate-900 mb-6">Compliance & Security</h2>
             
             <div className="space-y-6">
               <div>
-                <h3 className="font-semibold text-slate-900 mb-2">Operator Information</h3>
-                <p className="text-slate-700">
-                  RowWhisper is operated as an independent overseas business. The service is exclusively available to users outside mainland China, with active IP blocking for mainland China access.
-                </p>
+                <h3 className="font-semibold text-slate-900 mb-2">Operation Location</h3>
+                <p className="text-slate-700">Hong Kong</p>
               </div>
 
               <div>
@@ -102,9 +100,9 @@ export default function About() {
               </div>
 
               <div>
-                <h3 className="font-semibold text-slate-900 mb-2">Business Objectives</h3>
+                <h3 className="font-semibold text-slate-900 mb-2">User Data Protection</h3>
                 <p className="text-slate-700">
-                  Our goal is to provide overseas professionals with an integrated solution combining privacy-secure communication and lightweight AI development tools, enabling efficient collaboration and productivity.
+                  All user data is stored on encrypted overseas cloud servers in compliance with GDPR international privacy standards. The website adopts full TLS 1.3 encryption and global IP access restrictions to maintain compliance.
                 </p>
               </div>
             </div>

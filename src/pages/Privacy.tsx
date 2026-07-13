@@ -4,22 +4,22 @@ export default function Privacy() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
           <h1 className="text-3xl font-bold text-slate-900 mb-6">Privacy Policy</h1>
-          <p className="text-slate-500 mb-8">Last Updated: June 2025</p>
+          <p className="text-slate-500 mb-8">Last Updated: July 2026</p>
           
           <p className="text-slate-700 mb-6">
             RowWhisper ("we", "us", or "our") operates the website <code className="bg-slate-100 px-2 py-1 rounded">https://rowwhisper.com</code> (the "Service").
           </p>
           
           <p className="text-slate-700 mb-8">
-            This Privacy Policy explains how we collect, use, store, and protect user information when you use our private office chat platform.
+            This Privacy Policy explains how we collect, use, store, and protect user information for our document camouflage private chat platform.
           </p>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">1. Information We Collect</h2>
-          <p className="text-slate-700 mb-4">We may collect the following information:</p>
-          <ul className="list-disc list-inside text-slate-700 mb-6 space-y-2">
-            <li>Account registration information such as your email address</li>
-            <li>Service usage logs and interaction records</li>
-            <li>Device and browser basic access information</li>
+          <p className="text-slate-700 mb-4">We collect only the following minimal information:</p>
+          <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
+            <li>Account registration email address</li>
+            <li>Basic website access and connection logs</li>
+            <li>Chat interaction data generated during platform usage</li>
           </ul>
           <p className="text-slate-700 mb-8">
             We do NOT collect real-name identity information, payment information, or sensitive personal data. All payment processes are handled independently by Stripe.
@@ -28,23 +28,23 @@ export default function Privacy() {
           <h2 className="text-xl font-semibold text-slate-900 mb-4">2. How We Use Information</h2>
           <p className="text-slate-700 mb-4">We use collected data to:</p>
           <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
-            <li>Provide, maintain, and improve our SaaS services</li>
-            <li>Optimize AI tool functions and user experience</li>
-            <li>Ensure platform security and prevent abuse</li>
+            <li>Provide and maintain private chat service and document camouflage functions</li>
+            <li>Ensure platform security and prevent unauthorized access</li>
+            <li>Verify user account identity</li>
             <li>Respond to user service requests</li>
           </ul>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">3. Data Storage & Overseas Compliance</h2>
           <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
-            <li>All user data is stored on overseas cloud servers.</li>
-            <li>We do not store any user data within mainland China.</li>
-            <li>The platform fully complies with GDPR and international data privacy standards.</li>
+            <li>All user data is stored exclusively on overseas cloud servers.</li>
+            <li>No user data is stored or processed within Mainland China.</li>
+            <li>The platform complies with GDPR and international data privacy standards.</li>
           </ul>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">4. Data Sharing</h2>
           <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
-            <li>We will never sell, rent, or trade your personal data to third parties.</li>
-            <li>We only share necessary data with authorized service providers (such as Stripe for payment processing) to complete basic service functions.</li>
+            <li>We will never sell, rent, or trade user personal data.</li>
+            <li>We only share necessary data with authorized service providers, including Stripe for payment processing, to complete platform basic services.</li>
           </ul>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">5. User Rights</h2>
@@ -52,63 +52,56 @@ export default function Privacy() {
           <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
             <li>Access your account data</li>
             <li>Request data deletion</li>
-            <li>Cancel your service subscription at any time</li>
+            <li>Cancel your subscription at any time</li>
           </ul>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">6. Website Access Control</h2>
           <p className="text-slate-700 mb-8">
-            Our website restricts access from Mainland China IP addresses for global compliance and security reasons. This is a technical security measure and does not affect service availability for global overseas users.
+            Our website restricts access from Mainland China IP addresses for global compliance and security reasons. This technical restriction does not affect service availability for global overseas users.
           </p>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">7. Cookies</h2>
           <p className="text-slate-700 mb-8">
-            We use basic browser cookies to stabilize website access and user session status.
+            We use necessary browser cookies to stabilize website access and user session status.
           </p>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">8. Legal Basis for Processing Personal Data</h2>
-          <p className="text-slate-700 mb-4">We process your personal data under the following legal bases under GDPR:</p>
-          <ul className="list-disc list-inside text-slate-700 mb-4 space-y-2">
-            <li><strong>Performance of contract:</strong> To deliver our SaaS subscription services you have purchased.</li>
-            <li><strong>Legitimate business interest:</strong> For platform security, fraud prevention, service optimization and technical maintenance.</li>
-            <li><strong>Consent:</strong> Where you voluntarily agree to optional analytics cookies or marketing communications.</li>
+          <p className="text-slate-700 mb-4">We process your personal data under the following GDPR legal bases:</p>
+          <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
+            <li>Performance of contract to provide private chat SaaS services</li>
+            <li>Legitimate business interest for platform security and maintenance</li>
+            <li>Voluntary user consent where applicable</li>
           </ul>
-          <p className="text-slate-700 mb-8">
-            You have the right to withdraw consent at any time without affecting the lawfulness of prior processing.
-          </p>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">9. Data Retention Policy</h2>
           <p className="text-slate-700 mb-8">
-            We retain user data only for service and legal compliance purposes. Active account data is kept during your service period. After account cancellation, basic billing and security records are retained for 6 years for tax and anti-fraud compliance. All non-essential personal data will be permanently deleted within 30 days upon your deletion request.
+            Active account data is retained during the service period. After account cancellation, basic compliance records are retained for 6 years for tax and anti-fraud requirements. All non-essential personal data will be permanently deleted within 30 days upon user deletion request.
           </p>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">10. Data Security Protection</h2>
-          <p className="text-slate-700 mb-4">We implement industry-standard technical and organizational security measures to protect your data:</p>
+          <p className="text-slate-700 mb-4">We adopt industry-standard security measures including:</p>
           <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
-            <li>End-to-end TLS 1.3 HTTPS encryption for all website traffic.</li>
-            <li>Encrypted cloud storage hosted on overseas servers outside Mainland China.</li>
-            <li>Role-based access control for internal staff to limit data access.</li>
-            <li>Regular security scanning and WAF protection against unauthorized access and attacks.</li>
+            <li>Full TLS 1.3 HTTPS encryption</li>
+            <li>Encrypted overseas cloud storage</li>
+            <li>WAF protection against unauthorized access and attacks</li>
           </ul>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">11. Cookie Types & Your Choices</h2>
-          <p className="text-slate-700 mb-4">We use two categories of cookies:</p>
-          <ul className="list-disc list-inside text-slate-700 mb-4 space-y-2">
-            <li><strong>Necessary cookies:</strong> Mandatory for website login, session maintenance and subscription function, cannot be disabled.</li>
-            <li><strong>Analytics cookies:</strong> Optional anonymous usage tracking for product improvement. You may block non-essential cookies via your browser settings at any time.</li>
-          </ul>
           <p className="text-slate-700 mb-8">
-            We do not use advertising cookies or share tracking data with marketing third parties.
+            We only use necessary functional cookies for website session maintenance. No advertising cookies or tracking cookies are used.
           </p>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">12. Data Breach Notification</h2>
           <p className="text-slate-700 mb-8">
-            If a personal data security breach occurs that creates high risk to your privacy, we will notify affected users and relevant regulatory authorities within 72 hours after discovering the incident, together with recommended protective actions.
+            If a personal data security breach occurs, we will notify affected users and relevant regulatory authorities within 72 hours in accordance with global privacy compliance requirements.
           </p>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">13. Contact For Privacy Inquiries</h2>
-          <p className="text-slate-700 mb-4">Email: <a href="mailto:wangalam1990@outlook.com" className="text-emerald-600 hover:underline">wangalam1990@outlook.com</a></p>
           <p className="text-slate-700">
-            All privacy-related requests, data export or deletion applications shall be submitted via this official email address. We will respond within 7 working days.
+            Email: <a href="mailto:wangalam1990@outlook.com" className="text-emerald-600 hover:underline">wangalam1990@outlook.com</a>
+          </p>
+          <p className="text-slate-700 mt-2">
+            We will respond to all privacy-related inquiries within 7 working days.
           </p>
         </div>
       </div>

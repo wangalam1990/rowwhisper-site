@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Check, Sparkles, Zap } from "lucide-react";
+import { Check, Sparkles, Zap, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Pricing() {
@@ -11,14 +11,12 @@ export default function Pricing() {
     yearlyPrice: 15,
     description: "Flexible monthly subscription",
     features: [
-      "Unlimited private rooms",
-      "End-to-end encryption",
-      "Team member management",
-      "Real-time messaging",
+      "Full document interface camouflage",
+      "Hidden one-on-one private chat",
+      "Encrypted team conversation rooms",
+      "No message pop-up alerts",
+      "Zero local chat trace retention",
       "24/7 customer support",
-      "Secure file sharing",
-      "Full AI coding IDE",
-      "AI code completion",
     ],
     buttonText: "Start Monthly",
     popular: false,
@@ -34,9 +32,8 @@ export default function Pricing() {
       "20% discount",
       "Priority support",
       "Custom room branding",
-      "Advanced analytics",
-      "API access",
-      "AI-powered insights",
+      "Advanced encryption options",
+      "API access for integrations",
     ],
     buttonText: "Start Yearly",
     popular: true,
@@ -53,7 +50,7 @@ export default function Pricing() {
             Simple, Transparent Pricing
           </h1>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            Choose the plan that fits your team. No hidden fees, no surprises.
+            Choose the plan that fits your needs. No hidden fees, no surprises.
           </p>
           
           <div className="flex items-center justify-center gap-4 mt-8">
@@ -90,9 +87,10 @@ export default function Pricing() {
               <h3 className="text-xl font-bold text-slate-900">{monthlyPlan.name}</h3>
             </div>
             <p className="text-slate-500 mb-2">{monthlyPlan.description}</p>
-            <p className="text-sm text-emerald-600 font-medium mb-6">
-              All plans include private office chat + full AI coding IDE features
-            </p>
+            <div className="flex items-center gap-2 text-sm text-emerald-600 font-medium mb-6">
+              <FileText className="w-4 h-4" />
+              Document camouflage + private chat
+            </div>
             <div className="mb-6">
               <span className="text-4xl font-bold text-slate-900">${currentMonthlyPrice}</span>
               <span className="text-slate-500 ml-2">/month</span>
@@ -129,9 +127,10 @@ export default function Pricing() {
               <h3 className="text-xl font-bold text-slate-900">{yearlyPlan.name}</h3>
             </div>
             <p className="text-slate-500 mb-2">{yearlyPlan.description}</p>
-            <p className="text-sm text-emerald-600 font-medium mb-6">
-              All plans include private office chat + full AI coding IDE features
-            </p>
+            <div className="flex items-center gap-2 text-sm text-emerald-600 font-medium mb-6">
+              <FileText className="w-4 h-4" />
+              Document camouflage + private chat
+            </div>
             <div className="mb-6">
               <span className="text-4xl font-bold text-slate-900">${currentYearlyPrice}</span>
               <span className="text-slate-500 ml-2">/month</span>
@@ -165,7 +164,7 @@ export default function Pricing() {
         <div className="text-center mt-12">
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-6 max-w-2xl mx-auto">
             <p className="text-sm text-amber-800">
-              Private encrypted office chat module is under final deployment, all purchased subscription features will be fully activated within 15 business days. AI coding IDE functions are fully available for immediate use after account activation.
+              Full private chat functions are currently in staged rollout. All paid subscription features will be fully activated within 15 business days after successful payment.
             </p>
           </div>
           

@@ -4,7 +4,7 @@ export default function Refund() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
           <h1 className="text-3xl font-bold text-slate-900 mb-6">Refund and Cancellation Policy</h1>
-          <p className="text-slate-500 mb-8">Last Updated: June 2025</p>
+          <p className="text-slate-500 mb-8">Last Updated: July 2026</p>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">1. Subscription Cancellation</h2>
           <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
@@ -15,24 +15,22 @@ export default function Refund() {
             <li>Cancellation can be reverted at any time before the current period expires.</li>
           </ul>
 
-          <h2 className="text-xl font-semibold text-slate-900 mb-4">2. Refund Policy</h2>
-          <p className="text-slate-700 mb-4">RowWhisper provides digital SaaS services with instant feature access after payment.</p>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">2. Refund Rules</h2>
+          <p className="text-slate-700 mb-4">RowWhisper provides digital private chat SaaS services with immediate functional access after payment.</p>
           <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
-            <li>All subscription payments are final and generally non-refundable.</li>
+            <li>Most subscription payments are final and non-refundable.</li>
             <li>No refunds are provided for partial periods of subscription.</li>
             <li>Free trial periods are non-refundable.</li>
           </ul>
 
-          <h2 className="text-xl font-semibold text-slate-900 mb-4">3. Exceptional Refund Cases</h2>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">3. Full Refund Support</h2>
           <p className="text-slate-700 mb-4">
-            We may provide partial or full refund at our sole discretion in the following special situations:
+            Full refund support is available under the following legitimate circumstances:
           </p>
           <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
-            <li>System service failure causing complete and prolonged service unavailability</li>
-            <li>Double accidental payment within the same billing cycle</li>
-            <li>Technical error causing incorrect charge amount</li>
-            <li>Service features not working as described within 7 days of subscription</li>
-            <li>If full advertised product features are not delivered within 15 business days of subscription purchase, users may submit a full refund request via support email</li>
+            <li>System-level service failure causing long-term service unavailability</li>
+            <li>Accidental duplicate payment within the same billing cycle</li>
+            <li>Failure to launch all advertised functions within the promised 15-business-day rollout period</li>
           </ul>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">4. Refund Request Process</h2>
@@ -45,37 +43,18 @@ export default function Refund() {
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">5. Billing Failure</h2>
           <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
-            <li>If automatic payment fails, the system will send a payment reminder email.</li>
-            <li>Payment will be retried up to 3 times within 7 days.</li>
-            <li>If all retry attempts fail, the system will stop renewing your subscription.</li>
-            <li>Your account will automatically revert to the free plan after expiration. No penalty will be charged.</li>
+            <li>If automatic payment fails, the subscription renewal will stop automatically.</li>
+            <li>The account will revert to the free plan after expiration with no penalty or overdue fee.</li>
           </ul>
 
-          <h2 className="text-xl font-semibold text-slate-900 mb-4">6. Annual Plan Special Terms</h2>
-          <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
-            <li>Annual subscription plans are non-refundable after 14 days of purchase.</li>
-            <li>Within the first 14 days, a pro-rated refund may be considered for exceptional cases.</li>
-            <li>Cancellation of annual plans disables automatic renewal but does not provide refunds for the remaining period.</li>
-          </ul>
-
-          <h2 className="text-xl font-semibold text-slate-900 mb-4">7. Free Trial Conversion</h2>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">6. Service Scope</h2>
           <p className="text-slate-700 mb-8">
-            When converting from a free trial to a paid subscription, no refund will be provided for any charges incurred during the trial period.
+            This policy applies to all free and paid plans of RowWhisper platform.
           </p>
 
-          <h2 className="text-xl font-semibold text-slate-900 mb-4">8. Service Scope</h2>
-          <p className="text-slate-700 mb-8">
-            This policy applies to all paid plans including Monthly and Yearly subscriptions.
-          </p>
-
-          <h2 className="text-xl font-semibold text-slate-900 mb-4">9. Changes to This Policy</h2>
-          <p className="text-slate-700 mb-8">
-            We reserve the right to modify this refund and cancellation policy at any time. Changes will be effective immediately upon posting on our website.
-          </p>
-
-          <h2 className="text-xl font-semibold text-slate-900 mb-4">10. Contact</h2>
+          <h2 className="text-xl font-semibold text-slate-900 mb-4">7. Support Contact</h2>
           <p className="text-slate-700">
-            For refund or billing inquiries, please contact our official support email: <a href="mailto:wangalam1990@outlook.com" className="text-emerald-600 hover:underline">wangalam1990@outlook.com</a>.
+            For refund and billing inquiries, please contact: <a href="mailto:wangalam1990@outlook.com" className="text-emerald-600 hover:underline">wangalam1990@outlook.com</a>.
           </p>
         </div>
       </div>

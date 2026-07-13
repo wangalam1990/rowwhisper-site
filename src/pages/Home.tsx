@@ -1,23 +1,23 @@
-import { Shield, Users, Lock, ArrowRight, CheckCircle } from "lucide-react";
+import { Shield, FileText, Lock, ArrowRight, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import RequiredLabels from "../components/RequiredLabels";
 
 export default function Home() {
   const features = [
     {
-      icon: Shield,
-      title: "Enterprise-Grade Encryption",
-      description: "Military-grade end-to-end encryption protects all communications. Your data stays private and secure.",
+      icon: FileText,
+      title: "Document Camouflage Mode",
+      description: "The entire interface simulates standard office documents and spreadsheets, fully hiding private chat behavior in workplace scenarios.",
     },
     {
-      icon: Users,
-      title: "Private Team Workspaces",
-      description: "Create secure, dedicated chat rooms for your team. Invite-only access ensures confidentiality.",
+      icon: Shield,
+      title: "End-to-End Encryption",
+      description: "Military-grade encryption protects all communications. No visible chat entrance, no pop-up notifications, zero exposure risk.",
     },
     {
       icon: Lock,
-      title: "Distraction-Free Environment",
-      description: "No social features, no algorithms, no noise. Pure productivity-focused communication.",
+      title: "Hidden Private Chat",
+      description: "Supports one-on-one and group conversations. All chat content is hidden by default with no local traces.",
     },
   ];
 
@@ -30,13 +30,12 @@ export default function Home() {
           <RequiredLabels />
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Private Office Chat
+              RowWhisper
               <br />
-              <span className="text-emerald-400">For Overseas Teams</span>
+              <span className="text-emerald-400">Discreet Private Chat</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-              Enterprise-grade encrypted communication platform designed exclusively for overseas teams. 
-              No social features, no distractions - just secure, focused collaboration.
+              Looks like a regular document, chats in total privacy. Zero office exposure risk.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -56,7 +55,7 @@ export default function Home() {
             
             <div className="mt-8 bg-amber-50/10 border border-amber-500/20 rounded-xl p-4 max-w-xl mx-auto">
               <p className="text-sm text-amber-300">
-                Private encrypted office chat module is under final deployment, all purchased subscription features will be fully activated within 15 business days. AI coding IDE functions are fully available for immediate use after account activation.
+                Full private chat functions are currently in staged rollout. All paid subscription features will be fully activated within 15 business days after successful payment.
               </p>
             </div>
           </div>
@@ -69,7 +68,7 @@ export default function Home() {
             Why RowWhisper?
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            Built specifically for professional teams who value privacy and productivity
+            Built specifically for office users who need completely private communication
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -95,10 +94,10 @@ export default function Home() {
       <section className="bg-slate-900 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Focus on Work?
+            Ready to Chat Privately?
           </h2>
           <p className="text-slate-300 mb-8">
-            Join global teams who trust RowWhisper for secure, private business communication
+            Join global office users who trust RowWhisper for completely discreet communication
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -131,8 +130,8 @@ export default function Home() {
               ))}
             </div>
             <p className="text-slate-600 mb-4">
-              "RowWhisper has transformed how our remote team communicates. 
-              No more distractions from social features - just pure productivity."
+              "RowWhisper has transformed how our team communicates in the office. 
+              The document camouflage keeps our private conversations completely hidden."
             </p>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
@@ -151,8 +150,8 @@ export default function Home() {
               ))}
             </div>
             <p className="text-slate-600 mb-4">
-              "Finally, a chat tool that respects our privacy. 
-              The encryption and private rooms give us peace of mind for sensitive discussions."
+              "Finally, a chat tool that respects privacy. 
+              The encryption and document interface give us peace of mind for sensitive discussions."
             </p>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
