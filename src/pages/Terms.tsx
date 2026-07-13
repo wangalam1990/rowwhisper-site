@@ -12,7 +12,7 @@ export default function Terms() {
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">1. Service Description</h2>
           <p className="text-slate-700 mb-8">
-            RowWhisper is an overseas SaaS platform providing document camouflage private chat services for global office users. The platform only provides hidden private communication functions, including document-style interface camouflage, one-on-one private chat, and encrypted team conversation rooms.
+            RowWhisper provides private, camouflaged chat services for overseas users.
           </p>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">2. User Eligibility</h2>

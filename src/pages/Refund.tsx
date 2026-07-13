@@ -16,7 +16,7 @@ export default function Refund() {
           </ul>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">2. Refund Rules</h2>
-          <p className="text-slate-700 mb-4">RowWhisper provides digital private chat SaaS services with immediate functional access after payment.</p>
+          <p className="text-slate-700 mb-4">Full chat features will be available within 15 business days of payment. Refunds are available if features are not delivered as promised. RowWhisper provides digital private chat SaaS services.</p>
           <ul className="list-disc list-inside text-slate-700 mb-8 space-y-2">
             <li>Most subscription payments are final and non-refundable.</li>
             <li>No refunds are provided for partial periods of subscription.</li>

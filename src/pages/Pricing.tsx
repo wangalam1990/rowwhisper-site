@@ -168,12 +168,8 @@ export default function Pricing() {
             </p>
           </div>
           
-          <p className="text-slate-500 mb-4">
-            All monthly & annual subscriptions follow our Refund & Cancellation Policy. Annual plans are non-refundable for partial annual periods after activation.
-          </p>
-          
           <p className="text-slate-500 text-sm mb-4">
-            By subscribing, you agree to our <Link to="/terms" className="text-emerald-600 hover:underline">Terms of Service</Link>, <Link to="/privacy" className="text-emerald-600 hover:underline">Privacy Policy</Link> and <Link to="/refund" className="text-emerald-600 hover:underline">Refund & Cancellation Policy</Link>.
+            All subscriptions are governed by our <Link to="/terms" className="text-emerald-600 hover:underline">Terms of Service</Link>, <Link to="/privacy" className="text-emerald-600 hover:underline">Privacy Policy</Link>, and <Link to="/refund" className="text-emerald-600 hover:underline">Refund & Cancellation Policy</Link>. Annual plans do not provide refunds for unused partial periods.
           </p>
           
           <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow">

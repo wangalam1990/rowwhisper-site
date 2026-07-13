@@ -103,6 +103,9 @@ export default function Login() {
 
           <div className="mt-6 pt-6 border-t border-slate-200">
             <p className="text-center text-sm text-slate-500">
+              Accounts require manual activation after registration. You will receive a login link via email.
+            </p>
+            <p className="text-center text-sm text-slate-500 mt-2">
               By signing in, you agree to our{" "}
               <Link to="/privacy" className="text-emerald-600 hover:text-emerald-700">
                 Privacy Policy

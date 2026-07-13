@@ -11,7 +11,7 @@ export default function Privacy() {
           </p>
           
           <p className="text-slate-700 mb-8">
-            This Privacy Policy explains how we collect, use, store, and protect user information for our document camouflage private chat platform.
+            We collect information only to provide secure, private chat services.
           </p>
 
           <h2 className="text-xl font-semibold text-slate-900 mb-4">1. Information We Collect</h2>

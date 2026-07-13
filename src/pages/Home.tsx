@@ -6,18 +6,18 @@ export default function Home() {
   const features = [
     {
       icon: FileText,
-      title: "Document Camouflage Mode",
-      description: "The entire interface simulates standard office documents and spreadsheets, fully hiding private chat behavior in workplace scenarios.",
+      title: "Document Camouflage",
+      description: "Simple document-style interface that looks like regular work files.",
     },
     {
       icon: Shield,
-      title: "End-to-End Encryption",
-      description: "Military-grade encryption protects all communications. No visible chat entrance, no pop-up notifications, zero exposure risk.",
+      title: "Private Chat",
+      description: "Hidden messaging that works without attracting attention.",
     },
     {
       icon: Lock,
-      title: "Hidden Private Chat",
-      description: "Supports one-on-one and group conversations. All chat content is hidden by default with no local traces.",
+      title: "Encrypted",
+      description: "Secure conversations protected by end-to-end encryption.",
     },
   ];
 
@@ -32,10 +32,22 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               RowWhisper
               <br />
-              <span className="text-emerald-400">Discreet Private Chat</span>
+              <span className="text-emerald-400">Discreet Private Chat for Office</span>
             </h1>
+            <p className="text-lg md:text-xl text-slate-300 mb-4 max-w-2xl mx-auto">
+              Looks like a regular document.
+            </p>
             <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-              Looks like a regular document, chats in total privacy. Zero office exposure risk.
+              Works like hidden private chat.
+            </p>
+            <p className="text-slate-400 mb-8 max-w-2xl mx-auto">
+              RowWhisper is a private messaging tool designed for overseas office users. It uses a simple document-style interface as camouflage, so you can chat privately without attracting attention in a work environment.
+            </p>
+            <p className="text-emerald-400 mb-4 font-medium">
+              We provide only hidden chat services.
+            </p>
+            <p className="text-slate-400 mb-8">
+              We do NOT offer AI tools, document editing, coding features, or content generation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -55,7 +67,7 @@ export default function Home() {
             
             <div className="mt-8 bg-amber-50/10 border border-amber-500/20 rounded-xl p-4 max-w-xl mx-auto">
               <p className="text-sm text-amber-300">
-                Full private chat functions are currently in staged rollout. All paid subscription features will be fully activated within 15 business days after successful payment.
+                Full chat functionality is being deployed. Paid users will get full access within 15 business days after payment.
               </p>
             </div>
           </div>
@@ -65,11 +77,8 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Why RowWhisper?
+            Key Features
           </h2>
-          <p className="text-slate-600 max-w-2xl mx-auto">
-            Built specifically for office users who need completely private communication
-          </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
